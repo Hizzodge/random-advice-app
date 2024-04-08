@@ -1,0 +1,16 @@
+.modal {
+  position: relative;
+  padding: 48px;
+  max-width: 466px;
+  background-color: #313A48;
+  text-align: center;
+  border-radius: 20px;
+
+  h2 {
+    color: #CEE3E9;
+  }
+
+  p {
+    color: #53FFAA;
+  }
+}
