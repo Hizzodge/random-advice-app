@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Button from "./Button";
 import "./modal.css";
 import Destktopdivider from "../assets/svg/pattern-divider-desktop.svg";
-import Mobiledivider from "../assets/svg/pattern-divider-mobile.svg";
 
 const Modal = () => {
   const [apiData, setApiData] = useState({ id: "", advice: "" });
