@@ -1,11 +1,13 @@
 .button {
-  position: absolute;
-  bottom: -32px;
-  right: 45%;
   display: flex;
   align-items: center;
   width: 64px;
   height: 64px;
   border-radius: 50%;
   background-color: #53FFAA;
+  transition: box-shadow 0.5s ease;
+}
+.button:hover {
+  background-color: #53FFAA;
+  box-shadow: 0 0 40px 0 rgba(83, 255, 170, 0.6);
 }

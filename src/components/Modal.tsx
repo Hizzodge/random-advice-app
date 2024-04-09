@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Button from "./Button";
 import "./modal.css";
 import Destktopdivider from "../assets/svg/pattern-divider-desktop.svg";
+import Mobiledivider from "../assets/svg/pattern-divider-mobile.svg";
 
 const Modal = () => {
   const [apiData, setApiData] = useState({ id: "", advice: "" });
@@ -23,8 +24,8 @@ const Modal = () => {
   return (
     <div className="modal">
       <p>ADVICE # {apiData.id}</p>
-      <h2>{apiData.advice}</h2>
-      <img src={Destktopdivider} />
+      <h2>{`"${apiData.advice}"`}</h2>
+      <img src={Destktopdivider} className="divider" />
       <Button onClick={() => fetchAdvice()} />
     </div>
   );
